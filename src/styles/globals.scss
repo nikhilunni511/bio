@@ -38,6 +38,20 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --dark-color: #0d0c22;
+  --blue-color: #0095f6;
+  --blue-dark-color: #0075e4;
+  --danger-color: #ff4963;
+  --danger-dark-color: #e02b45;
+  --primary-color: #0095f6;
+  --grey-color: #6e6d7a;
+  --greybg-color: #e7e7e9;
+  --success-color: #70c050;
+  --btngrey-color: #f3f3f4;
+  --black-op5-color: rgba(0,0,0,0.5);
+  --black-op2-color: rgba(0,0,0,0.2);
+  --white-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {

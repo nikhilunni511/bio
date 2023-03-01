@@ -1,0 +1,40 @@
+@use 'styles/mixins' as *;
+@use 'styles/variables' as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+
+  @include breakpoint-down($md) {
+    background-color: $bg-white;
+    width: 100%;
+    padding: 1rem 0 0 0 ;
+  }
+
+  .login {
+    background-color: #ffffff;
+    padding: 32px;
+    width: 400px;
+
+    @include breakpoint-down($md) {
+      width: 100%;
+    }
+
+    .loginTitle {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .forgotPassword {
+      height: 36px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+  }
+}

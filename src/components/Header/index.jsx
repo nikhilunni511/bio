@@ -12,7 +12,7 @@ export default function Header() {
                 <Image src={"/logo_design_sample_flower.png"} width={34} height={32} alt={'logo'}></Image>
             </div>
             <div>
-                <span>{"1"}</span>
+                <span>{"Don't have an account? Signup now"}</span>
             </div>
         </header>
     )

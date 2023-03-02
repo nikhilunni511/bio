@@ -1,0 +1,16 @@
+.socialButton {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: 1.5px solid;
+    margin-bottom: 1rem;
+
+    .socialLoginLink {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin: 0 4px;
+        }
+    }
+}

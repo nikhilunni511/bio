@@ -1,9 +1,9 @@
 import Link from "next/link";
 import styles from "./SocialMedia.module.scss"
 
-const SocialMediaButton = ({ media })  => {
+const SocialMediaButton = ({ media }) => {
     return (<div className={styles.socialButton}>
-        <Link href={'/'} className={styles.socialLoginLink}>
+        <Link href={media.redirect ?? '/'} className={styles.socialLoginLink}>
             <span>
                 {media.icon}
             </span>

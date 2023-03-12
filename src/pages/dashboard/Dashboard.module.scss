@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  padding: 2rem;
+  position: relative;
+
+  .container {
+    width: 100%;
+    display: flex;
+    .preview {
+      width: 50%;
+      background-color: black;
+      .mobile {
+        width: 350px;
+        height: 750px;
+        background-color: aqua;
+        margin: 20px auto;
+        border-radius: 40px;
+
+        .sectionContainer{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .profileImage {
+            border-radius: 50%;
+            width: 96px;
+            height: 96px;
+            margin-top: 48px;
+          }
+        }
+      }
+    }
+
+    .settings {
+      width: 50%;
+      background-color: red;
+      height: 10%;
+    }
+  }
+
+}

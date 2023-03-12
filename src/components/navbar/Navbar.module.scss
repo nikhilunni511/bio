@@ -1,0 +1,72 @@
+@use 'styles/mixins' as *;
+@use 'styles/variables' as *;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+
+  .navbarLogo {
+    .navbarLogoImage {
+      height: 50px;
+    }
+  }
+}
+
+
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.navbar-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-item {
+  margin-bottom: 1rem;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+  }
+
+  .navbar-item {
+
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}

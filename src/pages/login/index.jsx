@@ -18,7 +18,7 @@ export default function Login() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header className />
+      <Header />
       <main className={styles.main}>
         <div className={styles.login}>
           <h1 className={styles.loginTitle}>Login</h1>

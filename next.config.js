@@ -17,6 +17,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  images: {
+    domains: ['www.gravatar.com', 'localhost']
+  },
   rewrites
 }
 

@@ -1,20 +1,27 @@
+@use 'styles/variables' as *;
+
 .main {
   display: flex;
   padding: 2rem;
   position: relative;
+  background-color: #1c1b38;
 
   .container {
     width: 100%;
     display: flex;
     .preview {
       width: 50%;
-      background-color: black;
       .mobile {
         width: 350px;
         height: 750px;
-        background-color: aqua;
+        background-color: $bg-white;
         margin: 20px auto;
         border-radius: 40px;
+        border: 4px solid black;
+
+        .nameSection {
+          margin-top: 20px;
+        }
 
         .sectionContainer{
           display: flex;
@@ -27,13 +34,16 @@
             margin-top: 48px;
           }
         }
+
+        .socialSection {
+          margin-top: 20px;
+        }
       }
     }
 
     .settings {
       width: 50%;
       background-color: red;
-      height: 10%;
     }
   }
 

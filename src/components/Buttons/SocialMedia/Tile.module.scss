@@ -1,15 +1,19 @@
+@use 'styles/variables' as *;
+
 .gridContainer{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
   gap: 1rem;
   width: 100%;
   padding: 0 4px;
+  margin-top: 20px;
 
   .tile {
     width: 75px;
     height: 75px;
-    background-color: beige;
+    background-color: $bg-white;
     margin: auto;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 30%);;
     /* additional styling for the tile */
   }
 }

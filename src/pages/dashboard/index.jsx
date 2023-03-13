@@ -8,6 +8,7 @@ import HeaderRight from 'components/Header/Right'
 import Tile from 'components/Buttons/SocialMedia/Tile'
 import { verifyToken } from 'utils/verifyToken';
 import { useEffect } from 'react';
+import AccordionTabs from 'components/Accordion/Tabs';
 
 const data = [
   { id: 1, title: 'Tile 1', description: 'Description of tile 1' },
@@ -17,6 +18,21 @@ const data = [
   { id: 5, title: 'Tile 2', description: 'Description of tile 2' },
   { id: 6, title: 'Tile 3', description: 'Description of tile 3' },
   // more tile data...
+];
+
+const tabs = [
+  {
+    title: "Links",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    title: "Stats",
+    content: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    title: "Tab 3",
+    content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  },
 ];
 
 export default function Dashboard(props) {
@@ -50,19 +66,19 @@ export default function Dashboard(props) {
               <div className={styles.sectionContainer}>
                 <Image className={styles.profileImage} src={profileImage} width={96} height={96} alt={'logo'}></Image>
               </div>
-              <div className={styles.sectionContainer}>
+              <div className={[`${styles.sectionContainer} ${styles.nameSection}`]}>
                 <div className={styles.username}>
                   <h1 className={styles.sectionTitle}>John Doe</h1>
                 </div>
               </div>
-              <div className={styles.sectionContainer}>
+              <div className={[`${styles.sectionContainer} ${styles.socialSection}`]}>
                 <h1 className={styles.sectionTitle}>Socials</h1>
                 <Tile data={data} />
               </div>
             </div>
           </section>
           <section className={styles.settings}>
-
+            <AccordionTabs tabs={tabs} />
           </section>
         </div>
       </main>

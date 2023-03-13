@@ -1,0 +1,44 @@
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 300px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.optionsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f8f8f8;
+}
+
+.option:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.option:last-child {
+  border-bottom: 1px solid #ccc;
+}

@@ -1,3 +1,4 @@
+@use 'styles/mixins' as *;
 @use 'styles/variables' as *;
 
 .main {
@@ -11,6 +12,9 @@
     display: flex;
     .preview {
       width: 50%;
+      @include breakpoint-down($lg) {
+        display: none;
+      }
       .mobile {
         width: 350px;
         height: 750px;
@@ -43,7 +47,13 @@
 
     .settings {
       width: 50%;
-      background-color: red;
+      background-color: $light-bg;
+      margin: 20px auto;
+
+      @include breakpoint-down($lg) {
+        width: 100%;
+        min-height: 100vh;
+      }
     }
   }
 

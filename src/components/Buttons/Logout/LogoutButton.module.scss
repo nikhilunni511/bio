@@ -1,6 +1,10 @@
 @use 'styles/variables' as *;
 
 .logoutButton {
-  background-color: $bg-white;
+  background-color: unset;
   border: none;
+
+  svg {
+    background-color: $white;
+  }
 }

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0 -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -26,6 +26,7 @@
     "redux": "^4.2.1"
   },
   "devDependencies": {
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "workbox-sw": "^6.5.4"
   }
 }

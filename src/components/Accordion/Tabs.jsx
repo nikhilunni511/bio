@@ -8,7 +8,7 @@ const options = [
 ];
 
 const AccordionTabs = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState(0);
   const [openSocialMediaPopup, setSocialMediaModal] = useState(false);
 
   const handleClick = (index) => {
@@ -36,7 +36,7 @@ const AccordionTabs = ({ tabs }) => {
           >
             <div className={styles.tabButtons}>
               <button className={styles.buttonAddLink} onClick={() => setSocialMediaModal(true)} >{"+ Add Link"}</button>
-              {openSocialMediaPopup && <PopupSearchableList options={options} />}
+              {openSocialMediaPopup && <PopupSearchableList options={options} onClose={() => setSocialMediaModal(false)} />}
             </div>
           </div>
         ))}
